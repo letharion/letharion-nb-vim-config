@@ -1,0 +1,30 @@
+iabbr Hook <C-R>=HookFunc()<CR>
+
+" HookFunc(): Drupal helper function
+function! HookFunc()
+  let f = strpart(expand("%:t"), 0, stridx(expand("%:t"), '.', 0))
+
+  " wtf?
+  let a = input("")
+
+  let h = input("Which hook? ")
+
+  return "/**\<CR>Implements hook_" . h . "()\<CR>/\<CR>" . "function " . f . "_" . h . "() {\<CR>}\<ESC>k%i"
+endfunction
+
+let g:syntastic_phpcs_conf=" --standard=Drupal --extensions=php,module,inc,install,test,profile,theme"
+
+if has("autocmd")
+  " Drupal *.module and *.install files.
+  augroup module
+    autocmd BufRead,BufNewFile *.module set filetype=php
+    autocmd BufRead,BufNewFile *.install set filetype=php
+    autocmd BufRead,BufNewFile *.test set filetype=php
+    autocmd BufRead,BufNewFile *.inc set filetype=php
+    autocmd BufRead,BufNewFile *.profile set filetype=php
+    autocmd BufRead,BufNewFile *.view set filetype=php
+    autocmd BufRead,BufNewFile *.test set filetype=php
+  augroup END
+endif
+
+

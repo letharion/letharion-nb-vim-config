@@ -1,4 +1,4 @@
-	" Initiate Neo Bundle
+" Initiate Neo Bundle
 set nocompatible               " Be iMproved
 
 if has('vim_starting')
@@ -23,3 +23,7 @@ filetype plugin indent on     " Required!
 
 " Installation check.
 NeoBundleCheck
+
+" Everything that doesn't fit into a bundle goes here.
+source $HOME/.vim/basic-settings
+source $HOME/.vim/drupal-settings
