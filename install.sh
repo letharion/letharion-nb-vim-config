@@ -8,6 +8,8 @@ if [[ ! -d ${SETTINGS_LOCATION} || ! -f ${SETTINGS_LOCATION}/install.sh  || ! -d
   exit;
 fi
 
+git submodule update --init
+
 if [[ (! -e $HOME/.vimrc || -L $HOME/.vimrc) && (! -e $HOME/.vim || -L $HOME/.vim) ]]; then
   cd $HOME
   ln -sfn ${SETTINGS_LOCATION}/dotvim/.vimrc 
