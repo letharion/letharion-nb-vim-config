@@ -11,6 +11,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'joonty/vdebug.git'
 
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " vim-scripts repos
@@ -21,6 +22,7 @@ NeoBundle 'http://git.drupal.org/project/vimrc.git'
 
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
+
 
 " gist repos
 " NeoBundle 'gist:Shougo/656148', {
