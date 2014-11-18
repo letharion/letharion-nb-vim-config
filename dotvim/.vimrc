@@ -27,6 +27,7 @@ NeoBundleCheck
 " Everything that doesn't fit into a bundle goes here.
 source $HOME/.vim/basic-settings
 source $HOME/.vim/drupal-settings
+source $HOME/.vim/go-settings
 
 source $HOME/.vim/debug-info
 source $HOME/.vim/completion
