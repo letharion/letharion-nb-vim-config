@@ -13,6 +13,8 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'joonty/vdebug.git'
 NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'wting/rust.vim'
 
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " vim-scripts repos
