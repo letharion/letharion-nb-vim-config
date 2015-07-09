@@ -1,39 +1,36 @@
 call neobundle#begin(expand('~/.vim/bundle/'))
-" Recommended to install
-" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-" NeoBundle 'Shougo/vimproc'
+  " Recommended to install
+  " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
+  " NeoBundle 'Shougo/vimproc'
 
-" My Bundles here:
-"
-" Note: You don't set neobundle setting in .gvimrc!
-" Original repos on github
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'joonty/vdebug.git'
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'fatih/vim-go'
-NeoBundle 'wting/rust.vim'
+  " Original repos on github
+  NeoBundle 'tpope/vim-fugitive'
+  NeoBundle 'Lokaltog/vim-easymotion'
+  NeoBundle 'scrooloose/syntastic'
+  NeoBundle 'scrooloose/nerdtree'
+  NeoBundle 'altercation/vim-colors-solarized'
+  NeoBundle 'joonty/vdebug.git'
+  NeoBundle 'Shougo/neocomplete.vim'
+  NeoBundle 'fatih/vim-go'
+  NeoBundle 'wting/rust.vim'
 
-" NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" vim-scripts repos
-" NeoBundle 'FuzzyFinder'
+  " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+  " vim-scripts repos
+  " NeoBundle 'FuzzyFinder'
 
-" Drupal vimrc
-NeoBundle 'http://git.drupal.org/project/vimrc.git'
+  " Drupal vimrc
+  NeoBundle 'http://git.drupal.org/project/vimrc.git'
 
-" Non github repos
-NeoBundle 'git://git.wincent.com/command-t.git'
+  " Non github repos
+  NeoBundle 'git://git.wincent.com/command-t.git'
 
-
-" gist repos
-" NeoBundle 'gist:Shougo/656148', {
-"      \ 'name': 'everything.vim',
-"      \ 'script_type': 'plugin'}
-" Non git repos
-" NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
-" NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
+  " gist repo examples
+  " NeoBundle 'gist:Shougo/656148', {
+  "      \ 'name': 'everything.vim',
+  "      \ 'script_type': 'plugin'
+  " }
+  " Non git repos
+  " NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
+  " NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
 call neobundle#end()
