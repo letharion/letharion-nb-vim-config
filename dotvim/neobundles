@@ -1,3 +1,4 @@
+call neobundle#begin(expand('~/.vim/bundle/'))
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 " NeoBundle 'Shougo/vimproc'
@@ -34,3 +35,5 @@ NeoBundle 'git://git.wincent.com/command-t.git'
 " Non git repos
 " NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 " NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
+
+call neobundle#end()
