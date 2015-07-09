@@ -14,6 +14,7 @@ if [[ (! -e $HOME/.vimrc || -L $HOME/.vimrc) && (! -e $HOME/.vim || -L $HOME/.vi
   cd $HOME
   ln -sfn ${SETTINGS_LOCATION}/dotvim/.vimrc 
   ln -sfn ${SETTINGS_LOCATION}/dotvim .vim
+  touch .vim/debug-info
   cd -
 else
   echo "One or more of the files ~/.vimrc or ~/.vim already exists and are not a symlink. Aborting.";
