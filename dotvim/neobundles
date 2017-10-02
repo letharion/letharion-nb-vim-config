@@ -13,16 +13,20 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'Shougo/neocomplete.vim'
   NeoBundle 'fatih/vim-go'
   NeoBundle 'wting/rust.vim'
+  NeoBundle 'leafgarland/typescript-vim'
+  " NeoBundle 'FredKSchott/CoVim'
 
   " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
   " vim-scripts repos
   " NeoBundle 'FuzzyFinder'
 
   " Drupal vimrc
-  NeoBundle 'http://git.drupal.org/project/vimrc.git'
+  " Commented out because it made NeoBundle angry
+  " NeoBundle 'http://git.drupal.org/project/vimrc.git'
 
   " Non github repos
-  NeoBundle 'git://git.wincent.com/command-t.git'
+  " Commented out because it made NeoBundle angry
+  " NeoBundle 'git://git.wincent.com/command-t.git'
 
   " gist repo examples
   " NeoBundle 'gist:Shougo/656148', {
