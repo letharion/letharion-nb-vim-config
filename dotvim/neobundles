@@ -14,6 +14,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'fatih/vim-go'
   NeoBundle 'wting/rust.vim'
   NeoBundle 'leafgarland/typescript-vim'
+  NeoBundle 'alvan/vim-php-manual'
   " NeoBundle 'FredKSchott/CoVim'
 
   " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
