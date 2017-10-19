@@ -21,6 +21,8 @@ if dein#load_state('/home/letharion/.vim/dein.vim')
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('altercation/vim-colors-solarized')
+  call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' })
+  call dein#add('junegunn/fzf.vim')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
@@ -40,6 +42,9 @@ if dein#check_install()
 endif
 
 "End dein Scripts-------------------------
+
+" FZF settings
+set rtp+=~/.fzf
 
 " Everything that doesn't fit into a bundle goes here.
 source $HOME/.vim/basic-settings
