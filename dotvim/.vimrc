@@ -1,26 +1,45 @@
 " Initiate Neo Bundle
 set nocompatible               " Be iMproved
 
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
 endif
 
-" Let NeoBundle manage NeoBundle
-" NeoBundleFetch 'Shougo/neobundle.vim'
+" Required:
+set runtimepath+=/home/letharion/.vim/dein.vim/repos/github.com/Shougo/dein.vim
 
-" Include list of Neo bundles
-source $HOME/.vim/neobundles
+" Required:
+if dein#load_state('/home/letharion/.vim/dein.vim')
+  call dein#begin('/home/letharion/.vim/dein.vim')
 
-filetype plugin indent on     " Required!
+  " Let dein manage dein
+  " Required:
+  call dein#add('/home/letharion/.vim/dein.vim/repos/github.com/Shougo/dein.vim')
 
-"
-" Brief help
-" :NeoBundleList          - list configured bundles
-" :NeoBundleInstall(!)    - install(update) bundles
-" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+  " Add or remove your plugins here:
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('altercation/vim-colors-solarized')
 
-" Installation check.
-NeoBundleCheck
+  " You can specify revision/branch/tag.
+  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
+
+"End dein Scripts-------------------------
 
 " Everything that doesn't fit into a bundle goes here.
 source $HOME/.vim/basic-settings

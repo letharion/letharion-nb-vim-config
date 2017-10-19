@@ -1,8 +1,4 @@
 call neobundle#begin(expand('~/.vim/bundle/'))
-  " Recommended to install
-  " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-  " NeoBundle 'Shougo/vimproc'
-
   " Original repos on github
   NeoBundle 'tpope/vim-fugitive'
   NeoBundle 'Lokaltog/vim-easymotion'
@@ -15,27 +11,4 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'wting/rust.vim'
   NeoBundle 'leafgarland/typescript-vim'
   NeoBundle 'alvan/vim-php-manual'
-  " NeoBundle 'FredKSchott/CoVim'
-
-  " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-  " vim-scripts repos
-  " NeoBundle 'FuzzyFinder'
-
-  " Drupal vimrc
-  " Commented out because it made NeoBundle angry
-  " NeoBundle 'http://git.drupal.org/project/vimrc.git'
-
-  " Non github repos
-  " Commented out because it made NeoBundle angry
-  " NeoBundle 'git://git.wincent.com/command-t.git'
-
-  " gist repo examples
-  " NeoBundle 'gist:Shougo/656148', {
-  "      \ 'name': 'everything.vim',
-  "      \ 'script_type': 'plugin'
-  " }
-  " Non git repos
-  " NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
-  " NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
-
 call neobundle#end()
