@@ -1,7 +1,9 @@
-letharion-nb-vim-config
+My vim config
 =======================
-Base Neo Bundle Vim configuration.
+Dein based Vim configuration.
 
-git clone https://github.com/letharion/letharion-nb-vim-config.git --recursive
+git clone https://github.com/letharion/letharion-nb-vim-config.git
+
 cd letharion-nb-vim-config
+
 bash ./install.sh
