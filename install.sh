@@ -8,7 +8,8 @@ if [[ ! -d ${SETTINGS_LOCATION} || ! -f ${SETTINGS_LOCATION}/install.sh  || ! -d
   exit;
 fi
 
-git submodule update --init
+cd dotvim
+git clone https://github.com/Shougo/dein.vim.git
 
 if [[ (! -e $HOME/.vimrc || -L $HOME/.vimrc) && (! -e $HOME/.vim || -L $HOME/.vim) ]]; then
   cd $HOME
@@ -17,7 +18,7 @@ if [[ (! -e $HOME/.vimrc || -L $HOME/.vimrc) && (! -e $HOME/.vim || -L $HOME/.vi
   touch .vim/debug-info
   cd -
 else
-  echo "One or more of the files ~/.vimrc or ~/.vim already exists and are not a symlink. Aborting.";
+  echo "One or more of the files ~/.vimrc or ~/.vim already exists and they are not a symlink. Not overwriting them.";
   exit;
 fi
 
