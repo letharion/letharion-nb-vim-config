@@ -7,15 +7,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/home/letharion/.vim/dein.vim/repos/github.com/Shougo/dein.vim
+set runtimepath+=/home/letharion/.vim/plugins/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/home/letharion/.vim/dein.vim')
-  call dein#begin('/home/letharion/.vim/dein.vim')
+if dein#load_state('/home/letharion/.vim/plugins')
+  call dein#begin('/home/letharion/.vim/plugins')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/home/letharion/.vim/dein.vim/repos/github.com/Shougo/dein.vim')
+  call dein#add('/home/letharion/.vim/plugins/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
@@ -23,9 +23,8 @@ if dein#load_state('/home/letharion/.vim/dein.vim')
   call dein#add('altercation/vim-colors-solarized')
   call dein#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' })
   call dein#add('junegunn/fzf.vim')
-
-  " You can specify revision/branch/tag.
-  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+  call dein#add('leafgarland/typescript-vim')
+  call dein#add('w0rp/ale')
 
   " Required:
   call dein#end()
@@ -40,7 +39,6 @@ syntax enable
 if dein#check_install()
   call dein#install()
 endif
-
 "End dein Scripts-------------------------
 
 " FZF settings
@@ -53,3 +51,5 @@ source $HOME/.vim/go-settings
 
 source $HOME/.vim/debug-info
 source $HOME/.vim/completion
+
+let g:ale_sign_column_always = 1
